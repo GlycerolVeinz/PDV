@@ -1,0 +1,5 @@
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_02(1)/tutorial_02/cmake-build-debug/CMakeFiles/benchmark.bin.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_02(1)/tutorial_02/cmake-build-debug/CMakeFiles/condition_variable.bin.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_02(1)/tutorial_02/cmake-build-debug/CMakeFiles/decrypt.bin.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_02(1)/tutorial_02/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_02(1)/tutorial_02/cmake-build-debug/CMakeFiles/rebuild_cache.dir

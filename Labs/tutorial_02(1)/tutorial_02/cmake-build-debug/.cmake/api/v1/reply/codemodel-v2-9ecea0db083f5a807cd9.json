@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "B4B36PDV_02",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "benchmark.bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-benchmark.bin-Release-ac161011e86462c458a8.json",
+					"name" : "benchmark.bin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "condition_variable.bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-condition_variable.bin-Release-a0a385474d5c03d426b3.json",
+					"name" : "condition_variable.bin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "decrypt.bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-decrypt.bin-Release-fba6ab2b1eee88867a83.json",
+					"name" : "decrypt.bin",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/safor/Documents/Cvut/PDV/Labs/tutorial_02(1)/tutorial_02/cmake-build-debug",
+		"source" : "/home/safor/Documents/Cvut/PDV/Labs/tutorial_02(1)/tutorial_02"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
