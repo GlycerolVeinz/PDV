@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "code",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "main.bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main.bin-Release-497105cc9eb338a05792.json",
+					"name" : "main.bin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_openmp.bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_openmp.bin-Release-f9dd8b90d3cbe2a0d70c.json",
+					"name" : "test_openmp.bin",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/safor/Documents/Cvut/PDV/Labs/tutorial_03/cmake-build-release",
+		"source" : "/home/safor/Documents/Cvut/PDV/Labs/tutorial_03"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

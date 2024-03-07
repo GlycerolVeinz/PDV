@@ -1,0 +1,4 @@
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_03/cmake-build-release/CMakeFiles/main.bin.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_03/cmake-build-release/CMakeFiles/test_openmp.bin.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_03/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_03/cmake-build-release/CMakeFiles/rebuild_cache.dir
