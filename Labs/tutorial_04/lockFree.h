@@ -28,10 +28,16 @@ public:
             // zamknuti mutexu, validace stavu a provedeni vlozeni pomoci atomicke operace
             // compare-and-swap (current->next.compare_exchange_strong(...)).
 
-            break;
-
+            Node * next = current->next.load(std::memory_order_acquire);
+            if( !next || next->value > value) {
+                node->next.store(next, std::memory_order_release);
+                if(current->next.compare_exchange_strong(next, node, std::memory_order_acq_rel)) {
+                    return;
+                }
+            } else {
+                current = next;
+            }
         }
-
 		throw "Not implemented yet";
     }
 

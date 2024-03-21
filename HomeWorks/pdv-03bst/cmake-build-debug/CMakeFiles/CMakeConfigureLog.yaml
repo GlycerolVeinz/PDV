@@ -7,7 +7,7 @@ events:
       - "/snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.5.0-21-generic - x86_64
+      The system is: Linux - 6.5.0-25-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.out
+        /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is Clang, found in:
-        /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/a.out
+        /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-90iIfL"
-      binary: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-90iIfL"
+      source: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iTZ8nZ"
+      binary: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iTZ8nZ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,10 +71,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-90iIfL'
+        Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iTZ8nZ'
         
-        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_bde72
-        [1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o -c /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_ae673
+        [1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o -c /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -84,8 +84,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bde72.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bde72.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccMeauRK.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ae673.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ae673.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccmj8bNP.s
         GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -105,13 +105,13 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bde72.dir/'
-         as -v --64 -o CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o /tmp/ccMeauRK.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ae673.dir/'
+         as -v --64 -o CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o /tmp/ccmj8bNP.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o -o cmTC_bde72   && :
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o -o cmTC_ae673   && :
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -124,9 +124,9 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bde72' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bde72.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZO99yl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_bde72 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bde72' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bde72.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ae673' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ae673.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccswFITO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ae673 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ae673' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ae673.'
         
       exitCode: 0
   -
@@ -160,10 +160,10 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-90iIfL']
+        ignore line: [Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iTZ8nZ']
         ignore line: []
-        ignore line: [Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_bde72]
-        ignore line: [[1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o -c /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_ae673]
+        ignore line: [[1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o -c /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -173,8 +173,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bde72.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bde72.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccMeauRK.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ae673.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ae673.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccmj8bNP.s]
         ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -194,13 +194,13 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bde72.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o /tmp/ccMeauRK.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ae673.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o /tmp/ccmj8bNP.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o -o cmTC_bde72   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o -o cmTC_ae673   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -213,13 +213,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bde72' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bde72.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZO99yl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_bde72 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ae673' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ae673.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccswFITO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ae673 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccZO99yl.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccswFITO.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -237,7 +237,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_bde72] ==> ignore
+          arg [cmTC_ae673] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -249,7 +249,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_bde72.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_ae673.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -289,8 +289,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80f3Jh"
-      binary: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80f3Jh"
+      source: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sRnQZe"
+      binary: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sRnQZe"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -299,10 +299,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80f3Jh'
+        Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sRnQZe'
         
-        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_dabd3
-        [1/2] /usr/bin/c++   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_e1d4f
+        [1/2] /usr/bin/c++   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         Ubuntu clang version 14.0.0-1ubuntu1.1
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -312,7 +312,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80f3Jh -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80f3Jh -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sRnQZe -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sRnQZe -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -326,7 +326,7 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        [2/2] : && /usr/bin/c++  -v CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_dabd3   && :
+        [2/2] : && /usr/bin/c++  -v CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e1d4f   && :
         Ubuntu clang version 14.0.0-1ubuntu1.1
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -335,7 +335,7 @@ events:
         Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
-         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dabd3 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e1d4f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
         
       exitCode: 0
   -
@@ -375,10 +375,10 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80f3Jh']
+        ignore line: [Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sRnQZe']
         ignore line: []
-        ignore line: [Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_dabd3]
-        ignore line: [[1/2] /usr/bin/c++   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_e1d4f]
+        ignore line: [[1/2] /usr/bin/c++   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -390,7 +390,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80f3Jh -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-80f3Jh -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sRnQZe -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sRnQZe -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -404,7 +404,7 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/c++  -v CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_dabd3   && :]
+        ignore line: [[2/2] : && /usr/bin/c++  -v CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e1d4f   && :]
         ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -415,7 +415,7 @@ events:
         ignore line: [@m64]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dabd3 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e1d4f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [-pie] ==> ignore
           arg [-zrelro] ==> ignore
@@ -427,7 +427,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_dabd3] ==> ignore
+          arg [cmTC_e1d4f] ==> ignore
           arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
           arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -440,7 +440,7 @@ events:
           arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [CMakeFiles/cmTC_dabd3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_e1d4f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -475,8 +475,8 @@ events:
       - "CMakeLists.txt:15 (find_package)"
     description: "Detecting C OpenMP compiler info"
     directories:
-      source: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CauL7u"
-      binary: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CauL7u"
+      source: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-M7xGwB"
+      binary: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-M7xGwB"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -485,10 +485,10 @@ events:
       variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CauL7u'
+        Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-M7xGwB'
         
-        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_32652
-        [1/2] /usr/bin/cc   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o -c /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CauL7u/OpenMPTryFlag.c
+        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_02e3a
+        [1/2] /usr/bin/cc   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o -c /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-M7xGwB/OpenMPTryFlag.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -498,8 +498,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32652.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CauL7u/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_32652.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccS8O7Vq.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_02e3a.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-M7xGwB/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_02e3a.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjWdWxn.s
         GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -519,13 +519,13 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32652.dir/'
-         as -v --64 -o CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o /tmp/ccS8O7Vq.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_02e3a.dir/'
+         as -v --64 -o CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o /tmp/ccjWdWxn.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.'
-        [2/2] : && /usr/bin/cc -fopenmp -v  CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o -o cmTC_32652  -v && :
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.'
+        [2/2] : && /usr/bin/cc -fopenmp -v  CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o -o cmTC_02e3a  -v && :
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -539,9 +539,9 @@ events:
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
         Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_32652' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_32652.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWep0pg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_32652 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
-        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_32652' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_32652.'
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_02e3a' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_02e3a.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpvHv7X.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_02e3a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_02e3a' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_02e3a.'
         
       exitCode: 0
   -
@@ -553,10 +553,10 @@ events:
     message: |
       Parsed C OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CauL7u']
+        ignore line: [Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-M7xGwB']
         ignore line: []
-        ignore line: [Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_32652]
-        ignore line: [[1/2] /usr/bin/cc   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o -c /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CauL7u/OpenMPTryFlag.c]
+        ignore line: [Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_02e3a]
+        ignore line: [[1/2] /usr/bin/cc   -fopenmp -v -fdiagnostics-color=always -o CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o -c /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-M7xGwB/OpenMPTryFlag.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -566,8 +566,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32652.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CauL7u/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_32652.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccS8O7Vq.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_02e3a.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-M7xGwB/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_02e3a.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjWdWxn.s]
         ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -587,13 +587,13 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32652.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o /tmp/ccS8O7Vq.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_02e3a.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o /tmp/ccjWdWxn.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.']
-        ignore line: [[2/2] : && /usr/bin/cc -fopenmp -v  CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o -o cmTC_32652  -v && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.']
+        ignore line: [[2/2] : && /usr/bin/cc -fopenmp -v  CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o -o cmTC_02e3a  -v && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -607,13 +607,13 @@ events:
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
         ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec]
-        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_32652' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_32652.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWep0pg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_32652 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_02e3a' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_02e3a.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpvHv7X.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_02e3a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccWep0pg.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccpvHv7X.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -632,7 +632,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_32652] ==> ignore
+          arg [cmTC_02e3a] ==> ignore
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
@@ -641,7 +641,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_32652.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_02e3a.dir/OpenMPTryFlag.c.o] ==> ignore
           arg [-lgomp] ==> lib [gomp]
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
@@ -677,8 +677,8 @@ events:
       - "CMakeLists.txt:15 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P"
-      binary: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P"
+      source: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9"
+      binary: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -687,10 +687,10 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
       cached: true
       stdout: |
-        Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P'
+        Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9'
         
-        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_68fe9
-        [1/2] /usr/bin/c++   -fopenmp=libomp -v -std=gnu++20 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -c /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P/OpenMPTryFlag.cpp
+        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_9a977
+        [1/2] /usr/bin/c++   -fopenmp=libomp -v -std=gnu++20 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -c /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9/OpenMPTryFlag.cpp
         Ubuntu clang version 14.0.0-1ubuntu1.1
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -700,7 +700,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=gnu++20 -fdeprecated-macro -fdebug-compilation-dir=/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -x c++ /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P/OpenMPTryFlag.cpp
+         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9 -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=gnu++20 -fdeprecated-macro -fdebug-compilation-dir=/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9 -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -x c++ /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9/OpenMPTryFlag.cpp
         clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -714,7 +714,7 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        [2/2] : && /usr/bin/c++ -fopenmp=libomp -v  CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -o cmTC_68fe9  -v && :
+        [2/2] : && /usr/bin/c++ -fopenmp=libomp -v  CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -o cmTC_9a977  -v && :
         Ubuntu clang version 14.0.0-1ubuntu1.1
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -723,7 +723,7 @@ events:
         Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
-         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_68fe9 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -rpath /usr/lib/llvm-14/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9a977 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -rpath /usr/lib/llvm-14/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
         
       exitCode: 0
   -
@@ -735,10 +735,10 @@ events:
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P']
+        ignore line: [Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9']
         ignore line: []
-        ignore line: [Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_68fe9]
-        ignore line: [[1/2] /usr/bin/c++   -fopenmp=libomp -v -std=gnu++20 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -c /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P/OpenMPTryFlag.cpp]
+        ignore line: [Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_9a977]
+        ignore line: [[1/2] /usr/bin/c++   -fopenmp=libomp -v -std=gnu++20 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -c /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9/OpenMPTryFlag.cpp]
         ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -750,7 +750,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=gnu++20 -fdeprecated-macro -fdebug-compilation-dir=/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -x c++ /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kfff1P/OpenMPTryFlag.cpp]
+        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9 -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=gnu++20 -fdeprecated-macro -fdebug-compilation-dir=/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9 -ferror-limit 19 -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -x c++ /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjblY9/OpenMPTryFlag.cpp]
         ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -764,7 +764,7 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/c++ -fopenmp=libomp -v  CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -o cmTC_68fe9  -v && :]
+        ignore line: [[2/2] : && /usr/bin/c++ -fopenmp=libomp -v  CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -o cmTC_9a977  -v && :]
         ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -775,7 +775,7 @@ events:
         ignore line: [@m64]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_68fe9 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -rpath /usr/lib/llvm-14/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9a977 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -rpath /usr/lib/llvm-14/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [-pie] ==> ignore
           arg [-zrelro] ==> ignore
@@ -787,7 +787,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_68fe9] ==> ignore
+          arg [cmTC_9a977] ==> ignore
           arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11]
           arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64]
           arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
@@ -797,7 +797,7 @@ events:
           arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [CMakeFiles/cmTC_68fe9.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_9a977.dir/OpenMPTryFlag.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lomp] ==> lib [omp]
@@ -832,8 +832,8 @@ events:
       - "CMakeLists.txt:15 (find_package)"
     description: "Detecting C OpenMP version"
     directories:
-      source: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YiWdnq"
-      binary: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YiWdnq"
+      source: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YznOO8"
+      binary: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YznOO8"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -842,11 +842,11 @@ events:
       variable: "OpenMP_SPECTEST_C_"
       cached: true
       stdout: |
-        Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YiWdnq'
+        Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YznOO8'
         
-        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_23d29
-        [1/2] /usr/bin/cc   -fopenmp -fdiagnostics-color=always -o CMakeFiles/cmTC_23d29.dir/OpenMPCheckVersion.c.o -c /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YiWdnq/OpenMPCheckVersion.c
-        [2/2] : && /usr/bin/cc -fopenmp  CMakeFiles/cmTC_23d29.dir/OpenMPCheckVersion.c.o -o cmTC_23d29   && :
+        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_3959e
+        [1/2] /usr/bin/cc   -fopenmp -fdiagnostics-color=always -o CMakeFiles/cmTC_3959e.dir/OpenMPCheckVersion.c.o -c /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-YznOO8/OpenMPCheckVersion.c
+        [2/2] : && /usr/bin/cc -fopenmp  CMakeFiles/cmTC_3959e.dir/OpenMPCheckVersion.c.o -o cmTC_3959e   && :
         
       exitCode: 0
   -
@@ -857,8 +857,8 @@ events:
       - "CMakeLists.txt:15 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AtMv7z"
-      binary: "/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AtMv7z"
+      source: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sFK6o3"
+      binary: "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sFK6o3"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -867,11 +867,11 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: '/home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AtMv7z'
+        Change Dir: '/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sFK6o3'
         
-        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_b3d9f
-        [1/2] /usr/bin/c++   -fopenmp=libomp -std=gnu++20 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b3d9f.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_b3d9f.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_b3d9f.dir/OpenMPCheckVersion.cpp.o -c /home/safor/Documents/Cvut/PDV/Labs/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-AtMv7z/OpenMPCheckVersion.cpp
-        [2/2] : && /usr/bin/c++ -fopenmp=libomp  CMakeFiles/cmTC_b3d9f.dir/OpenMPCheckVersion.cpp.o -o cmTC_b3d9f   && :
+        Run Build Command(s): /snap/clion/265/bin/ninja/linux/x64/ninja -v cmTC_8673e
+        [1/2] /usr/bin/c++   -fopenmp=libomp -std=gnu++20 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_8673e.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_8673e.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_8673e.dir/OpenMPCheckVersion.cpp.o -c /home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sFK6o3/OpenMPCheckVersion.cpp
+        [2/2] : && /usr/bin/c++ -fopenmp=libomp  CMakeFiles/cmTC_8673e.dir/OpenMPCheckVersion.cpp.o -o cmTC_8673e   && :
         
       exitCode: 0
 ...

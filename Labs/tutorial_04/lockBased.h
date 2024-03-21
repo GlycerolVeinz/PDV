@@ -28,9 +28,27 @@ public:
     // Vsimnete si, ze trida Node reprezentujici uzel spojoveho seznamu obsahuje svuj
     // vlastni mutex 'm'.
     void insert(long long value) {
-        Node * node = new Node(value);
+        Node* node = new Node(value);
 
         // Doimplementujte vlozeni do seznamu
+
+        Node* current = head;
+
+        while (true) {
+            current->m.lock();
+            Node* next = current->next;
+
+            if ( !next || next->value > value) {
+                node->next = next;
+                current->next = node;
+                current->m.unlock();
+                return;
+            }
+            else {
+                current->m.unlock();
+                current = next;
+            }
+        }
 
         throw "Not implemented yet";
     }
@@ -47,6 +65,21 @@ public:
     //
     // Pro jednoduchost nemusite resit dealokaci pameti po odebrani prvku.
     bool remove(long long value) {
+//        Node* current = head;
+//        while(true) {
+//            Node* next = current->next;
+//            if( !next ) {
+//                return false;
+//            }
+//
+//            if(next->value == value) {
+//                current->next = next->next;
+//                delete next;
+//                return true;
+//            } else {
+//                current = next;
+//            }
+//        }
         throw "Not implemented yet";
     }
 };
