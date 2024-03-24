@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -22,9 +22,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d22f0134-6fb8-497c-887f-46a702c6cb75" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-02openmp/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-02openmp/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-6d62def709c969b418e1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-14T16-42-15-0841.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/hw" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-debug/hw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-release/.cmake/api/v1/reply/cmakeFiles-v1-cd0cb4ba54584df81eef.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-release/.cmake/api/v1/reply/index-2024-03-14T16-42-15-0838.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-release/CMakeFiles/clion-Release-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-release/CMakeFiles/clion-Release-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-release/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/cmake-build-release/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/src/bst_tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/src/bst_tree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/src/bst_tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/pdv-03bst/src/bst_tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tutorial_03/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../tutorial_03/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lockBased.h" beforeDir="false" afterPath="$PROJECT_DIR$/lockBased.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lockFree.h" beforeDir="false" afterPath="$PROJECT_DIR$/lockFree.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +57,9 @@
     <option name="majorVersion" value="2023" />
     <option name="minorVersion" value="3.4" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2dgT7cKJx4ewlmVVEgphGUVB9V3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,15 +75,10 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/safor/Documents/Cvut/PDV/HomeWorks/pdv-03bst"
+    "last_opened_file_path": "/home/safor/Documents/Cvut/PDV/Labs/tutorial_04"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main.bin" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="code" TARGET_NAME="main.bin" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="code" RUN_TARGET_NAME="main.bin">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -85,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710428555237</updated>
       <workItem from="1710428556352" duration="4367000" />
+      <workItem from="1711282390676" duration="2039000" />
     </task>
     <servers />
   </component>
