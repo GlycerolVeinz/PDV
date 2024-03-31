@@ -1,0 +1,4 @@
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_06/cmake-build-release/CMakeFiles/sorting.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_06/cmake-build-release/CMakeFiles/prefixsum.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_06/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/safor/Documents/Cvut/PDV/Labs/tutorial_06/cmake-build-release/CMakeFiles/rebuild_cache.dir
