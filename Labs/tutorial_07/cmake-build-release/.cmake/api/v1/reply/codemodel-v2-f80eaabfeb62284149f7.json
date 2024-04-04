@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Vectorization",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "autovec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-autovec-Release-57670e5add7153cf9556.json",
+					"name" : "autovec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "condswap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-condswap-Release-14210479276383da1c83.json",
+					"name" : "condswap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lzcnt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lzcnt-Release-d72d1562d0b4a9bb46b9.json",
+					"name" : "lzcnt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "normdist::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-normdist-Release-468d84dd94507534bf54.json",
+					"name" : "normdist",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "popcnt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-popcnt-Release-bb07add2ab31343e32f0.json",
+					"name" : "popcnt",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/safor/Documents/Cvut/PDV/Labs/tutorial_07/cmake-build-release",
+		"source" : "/home/safor/Documents/Cvut/PDV/Labs/tutorial_07"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
