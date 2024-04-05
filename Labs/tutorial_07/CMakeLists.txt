@@ -44,3 +44,5 @@ add_executable(condswap cond.cpp)
 add_executable(lzcnt  lzcnt.cpp)
 
 add_executable(popcnt  popcnt.cpp)
+
+link_libraries(OPenMP::OpenMP_CXX)

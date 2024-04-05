@@ -6,11 +6,10 @@
 #include <immintrin.h>
 
 int popcnt_intrinsic(uint64_t x) {
-  throw "Not implemented yet";
+//  throw "Not implemented yet";
 
   // Doimplementujte vypocet poctu jednickovych bitu pomoci intrinsic operace
-
-	return 0;
+    return _mm_popcnt_u64(x);
 }
 
 int popcnt_naive(uint64_t x) {

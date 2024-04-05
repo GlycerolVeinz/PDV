@@ -14,15 +14,21 @@ void condswap_vec(float * data, size_t N) {
     auto begin = steady_clock::now();
     size_t half = N / 2;
     try {
+//        throw "Not implemented yet";
 
-        throw "Not implemented yet";
-
+        #pragma omp parallel for default(none) shared(data, half)
         for (unsigned int i = 0; i < half; i += 8) {
             // Doplnte telo for smycky, ktera prohodi prvky data[i]
             // a data[i+half] tak, aby splnovaly data[i] <= data[i+half].
             //
             // Muzete predpokladat, ze data maji velikost, ktera splnuje
             // N % 16 == 0.
+            __m256 data_i = _mm256_loadu_ps(&data[i]);
+            __m256 data_i_half = _mm256_loadu_ps(&data[i + half]);
+            __m256 min_vector = _mm256_min_ps(data_i, data_i_half);
+            __m256 max_vector = _mm256_max_ps(data_i, data_i_half);
+            _mm256_storeu_ps(&data[i], min_vector);
+            _mm256_storeu_ps(&data[i + half], max_vector);
         }
         auto end = steady_clock::now();
         elapsedVectorized = static_cast<unsigned long>(duration_cast<microseconds>(end - begin).count());
