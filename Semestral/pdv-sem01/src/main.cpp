@@ -76,7 +76,7 @@ void evaluate(state_ptr& root, search_fn search) {
 int main() {
     // Vytvoreni instance hanojskych vezi s 3 koliky, 1 vezi (umistenou na
     // prvnim koliku a 4 kotouci ve vezi.
-    auto d = hanoi::domain<3, 1, 4>();
+    auto d = hanoi::domain<10, 1, 5>();
 
     // Vytvorit domenu "splnovani booleovskych funkci" muzete vytvorit nasledovne:
     //auto d = sat::domain<30,7,3,1,true>();
@@ -105,7 +105,7 @@ int main() {
     auto root = d.get_root();
 
     evaluate(root, bfs);
-    evaluate(root, iddfs);
+//    evaluate(root, iddfs);
     //evaluate(root, iddfs_weighted);
 
     return 0;
