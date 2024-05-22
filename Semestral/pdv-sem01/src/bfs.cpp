@@ -12,7 +12,7 @@ static bool operator<(const state_ptr &a, const state_ptr &b) {
 /*
  *  These function declarations show my progress on this task.
  *  some of them don't work at all, and some of them are slow,
- *  but final solution will be encapsulated in bfs() function
+ *  but final goal will be encapsulated in bfs() function
  * */
 state_ptr bfsSingle(state_ptr root);
 

@@ -3,13 +3,8 @@ package cz.cvut.fel.agents.pdv.swim;
 import cz.cvut.fel.agents.pdv.dsand.Message;
 import cz.cvut.fel.agents.pdv.dsand.Pair;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Queue;
-import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -22,6 +17,8 @@ import java.util.stream.IntStream;
  * Pokud si stale jeste nevite rady s frameworkem, inspiraci muzete nalezt v resenych prikladech ze cviceni.
  */
 public class ActStrategy {
+    private static int ProcessIndexCounter = 0;
+    private final int processIndex;
 
     // maximalni zpozdeni zprav
     private final int maxDelayForMessages;
@@ -33,7 +30,11 @@ public class ActStrategy {
 
     private int timeToDetectKilledProcess;
     private int upperBoundOnMessages;
+    private int tact = 0;
+    private int pokeInterval = 10;
     private int messagesSent = 0;
+
+    private int offset;
 
     // Definujte vsechny sve promenne a datove struktury, ktere budete potrebovat
 
@@ -44,6 +45,8 @@ public class ActStrategy {
 
         this.timeToDetectKilledProcess = timeToDetectKilledProcess;
         this.upperBoundOnMessages = upperBoundOnMessages;
+        this.offset = random.nextInt(otherProcesses.size());
+        this.processIndex = ProcessIndexCounter++;
     }
 
     /**
@@ -54,13 +57,26 @@ public class ActStrategy {
      * Diky zavedeni teto metody muzeme kontrolovat pocet odeslanych zprav vasi implementaci.
      */
     public List<Pair<String, Message>> act(Queue<Message> inbox, String disseminationProcess) {
-        // Od DisseminationProcess muzete dostat zpravu typu DeadProcessMessage, ktera Vas
-        // informuje o spravne detekovanem ukoncenem procesu.
-        // DisseminationProcess muzete poslat zpravu o detekovanem "mrtvem" procesu.
-        // Zprava musi byt typu PFDMessage.
-
         List<Pair<String, Message>> messagesToSend = new ArrayList<>();
-        pokeProcesses(messagesToSend);
+
+//        if (tact % pokeInterval == 0) {
+//            if (random.nextDouble() < 0.1) {
+//                String nextToPoke = otherProcesses.stream()
+//                        .filter(p -> !awaitingAck.containsKey(p) && !awaitingFurtherAck.containsKey(p))
+//                        .findAny()
+//                        .orElse(null);
+//                pokeProcess(nextToPoke, messagesToSend);
+//            }
+//        }
+
+        if (awaitingAck.isEmpty() && awaitingFurtherAck.isEmpty()) {
+            String nextToPoke = otherProcesses.get(random.nextInt(otherProcesses.size()));
+
+            pokeProcess(nextToPoke, messagesToSend);
+        }
+
+//        String nextToPoke = otherProcesses.get((tact + offset) % otherProcesses.size());
+//        pokeProcess(nextToPoke, messagesToSend);
 
         respondToMessages(inbox, messagesToSend);
 
@@ -70,91 +86,111 @@ public class ActStrategy {
                 .collect(Collectors.toMap(Entry::getKey, entry -> entry.getValue() + 1));
 
 //        2. check for timeouts
-        List<String> timedOutProcesses = awaitingAck.entrySet().stream()
+        Set<String> timedOutProcesses = awaitingAck.entrySet().stream()
                 .filter(entry -> entry.getValue() > maxDelayForMessages)
                 .map(Entry::getKey)
-                .toList();
+                .collect(Collectors.toSet());
 
-//        3. for each timed out process,
-//          send further poke message,
-//          through other random process that is not in the list of timed out processes
-        timedOutProcesses.forEach(process -> {
-            String randomProcess = otherProcesses.stream()
-                    .filter(p -> !timedOutProcesses.contains(p))
-                    .findAny()
-                    .orElse(null);
-            if (randomProcess != null && messagesSent < upperBoundOnMessages) {
-                messagesToSend.add(new Pair<>(randomProcess, SWIMMessage.createLongDistanceMessage(SWIMMessage.MessageType.FURTHER_POKE, process, process)));
-                messagesSent++;
-
-//            move process from awaitingAck to awaitingFurtherAck
-                awaitingFurtherAck.put(process, 0);
-                awaitingAck.remove(process);
-            } else {
-                System.err.println("No process to send further poke message to");
-            }
-        });
-
-//        4. increment all awaiting further acknowledgement timers
+//        3. increment all awaiting further acknowledgement timers
         awaitingFurtherAck = awaitingFurtherAck.entrySet().stream()
                 .collect(Collectors.toMap(Entry::getKey, entry -> entry.getValue() + 1));
 
+//        4. for each timed out process,
+//          send further poke message,
+//          through 3 other processes that are not in timeout
+        timedOutProcesses.forEach(timedOutProcess -> {
+            List<String> availableProcesses = this.otherProcesses.stream()
+                    .filter(p -> !timedOutProcesses.contains(p) && !p.equals(timedOutProcess))
+                    .filter(p -> !awaitingFurtherAck.containsKey(p) && !awaitingAck.containsKey(p))
+                    .toList();
+
+            IntStream.range(0, 10)
+                    .mapToObj(i -> availableProcesses.get(random.nextInt(availableProcesses.size())))
+                    .forEach(p -> {
+                        messagesToSend.add(new Pair<>(p, SWIMMessage.createLongDistanceMessage(SWIMMessage.MessageType.FURTHER_POKE, null, timedOutProcess)));
+                        messagesSent++;
+                    });
+
+            awaitingFurtherAck.put(timedOutProcess, 0);
+            awaitingAck.remove(timedOutProcess);
+            pokeInterval--;
+        });
+
+
+
 //        5. check for further timeouts
-        List<String> timedOutFurtherProcesses = awaitingFurtherAck.entrySet().stream()
-                .filter(entry -> entry.getValue() > maxDelayForMessages * 2)
+        Set<String> timedOutFurtherProcesses = awaitingFurtherAck.entrySet().stream()
+                .filter(entry -> entry.getValue() > maxDelayForMessages * 4)
                 .map(Entry::getKey)
-                .toList();
+                .collect(Collectors.toSet());
+
+//        timedOutFurtherProcesses
+//                .forEach(timedOutFurtherProcess -> {
+//                    System.err.println("Process " + timedOutFurtherProcess + " failed");
+//                });
 
 //        6. for each timed out further process,
 //          check with Dissemination if truly failed
         timedOutFurtherProcesses.forEach(process -> {
             messagesToSend.add(new Pair<>(disseminationProcess, new PFDMessage(process)));
+//            System.err.println(this.processIndex + ":Checking process " + process + " with Dissemination");
             awaitingFurtherAck.remove(process);
+            messagesSent++;
         });
 
+        tact++;
 
         return messagesToSend;
     }
 
-    private void pokeProcesses(List<Pair<String, Message>> messagesToSend){
-//        1. select random amount of processes to poke
-        int amountOfProcessesToPoke = random.nextInt(upperBoundOnMessages / 2);
-
-//        2. select random processes to poke
-        List<String> processesToPoke = IntStream.range(0, amountOfProcessesToPoke)
-                .mapToObj(i -> otherProcesses.get(random.nextInt(otherProcesses.size())))
-                .toList();
-
-//        3. generate poke message for each process
-        processesToPoke.forEach(process -> {
-            messagesToSend.add(new Pair<>(process, SWIMMessage.createShortDistanceMessage(SWIMMessage.MessageType.POKE)));
-            messagesSent++;
-            awaitingAck.put(process, 0);
-        });
-
+    private void pokeProcess(String process, List<Pair<String, Message>> messagesToSend){
+        messagesToSend.add(new Pair<>(process, SWIMMessage.createShortDistanceMessage(SWIMMessage.MessageType.POKE)));
+        awaitingAck.put(process, 0);
+        messagesSent++;
     }
 
     private void respondToMessages(Queue<Message> inbox, List<Pair<String, Message>> messagesToSend){
         while (!inbox.isEmpty()) {
             Message message = inbox.poll();
-            if (message instanceof SWIMMessage msg) {
-
-                switch (msg.getType()){
-                    case ACK ->
-                            awaitingAck.remove(msg.sender);
-                    case FURTHER_ACK ->
-                            awaitingAck.remove(msg.getWaitingForAckProcess());
-                    case REPOST_ACK ->
-                            messagesToSend.add(new Pair<>(msg.getWaitingForAckProcess(), SWIMMessage.createLongDistanceMessage(SWIMMessage.MessageType.FURTHER_ACK, msg.getWaitingForAckProcess(), msg.getNotRespondingProcess())));
-                    case FURTHER_POKE ->
-                            messagesToSend.add(new Pair<>(msg.sender, SWIMMessage.createLongDistanceMessage(SWIMMessage.MessageType.REPOST_ACK, msg.getWaitingForAckProcess(), msg.getNotRespondingProcess())));
-                    case POKE ->
-                            messagesToSend.add(new Pair<>(msg.sender, SWIMMessage.createShortDistanceMessage(SWIMMessage.MessageType.ACK)));
-                }
-            } else if (message instanceof DeadProcessMessage deadProcessMessage) {
-                System.out.println("Spravne detekovan ukonceny proces " + deadProcessMessage.getProcessID());
-            }
+            respondToMsg(message, messagesToSend);
         }
     }
+
+    private void respondToMsg(Message message, List<Pair<String, Message>> messagesToSend) {
+        if (message instanceof SWIMMessage msg) {
+            switch (msg.getType()){
+                case ACK -> {
+                    awaitingAck.remove(msg.sender);
+                    awaitingFurtherAck.remove(msg.sender);
+                    pokeInterval++;
+                }
+                case POKE -> {
+                    messagesToSend.add(new Pair<>(msg.sender, SWIMMessage.createShortDistanceMessage(SWIMMessage.MessageType.ACK)));
+                    messagesSent++;
+                }
+                case FURTHER_POKE -> {
+                    messagesToSend.add(new Pair<>(msg.getNotRespondingProcess(), SWIMMessage.createLongDistanceMessage(SWIMMessage.MessageType.REPOST_POKE, msg.sender, msg.getNotRespondingProcess())));
+                    messagesSent++;
+                }
+                case REPOST_POKE -> {
+                    messagesToSend.add(new Pair<>(msg.sender, SWIMMessage.createLongDistanceMessage(SWIMMessage.MessageType.FURTHER_ACK, msg.getWaitingForAckProcess(), msg.getNotRespondingProcess())));
+                    messagesSent++;
+                }
+                case FURTHER_ACK -> {
+                    messagesToSend.add(new Pair<>(msg.getWaitingForAckProcess(), SWIMMessage.createLongDistanceMessage(SWIMMessage.MessageType.REPOST_ACK, msg.getWaitingForAckProcess(), msg.getNotRespondingProcess())));
+                    messagesSent++;
+                }
+                case REPOST_ACK -> {
+                    awaitingFurtherAck.remove(msg.getNotRespondingProcess());
+                    awaitingAck.remove(msg.getNotRespondingProcess());
+                    pokeInterval++;
+                }
+            }
+        }
+//        else if (message instanceof DeadProcessMessage deadProcessMessage) {
+//            System.err.println("Spravne detekovan ukonceny proces " + deadProcessMessage.getProcessID());
+//        }
+    }
+
 
 }

@@ -39,7 +39,8 @@ public class SWIMMessage extends Message {
         ACK,
         FURTHER_ACK,
         FURTHER_POKE,
-        REPOST_ACK
+        REPOST_ACK,
+        REPOST_POKE
     }
 }
 

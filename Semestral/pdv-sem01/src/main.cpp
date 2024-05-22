@@ -50,10 +50,10 @@ void evaluate(state_ptr& root, search_fn search) {
         if (result->is_goal()) {
             std::cout << "Solution found. Cost=" << result->current_cost() << "\n";
         } else {
-            std::cout << "Search returned a solution - but it is not a goal!\n";
+            std::cout << "Search returned a goal - but it is not a goal!\n";
         }
     } else {
-        std::cout << "No solution found.\n";
+        std::cout << "No goal found.\n";
     }
 
     std::cout << "Time: " << duration_cast<milliseconds>(end - begin).count() << "ms\n";
@@ -76,10 +76,12 @@ void evaluate(state_ptr& root, search_fn search) {
 int main() {
     // Vytvoreni instance hanojskych vezi s 3 koliky, 1 vezi (umistenou na
     // prvnim koliku a 4 kotouci ve vezi.
-    auto d = hanoi::domain<10, 1, 5>();
+//    auto d = hanoi::domain<10, 1, 5>();
+//    auto d = hanoi::domain<3, 1, 4>();
+
 
     // Vytvorit domenu "splnovani booleovskych funkci" muzete vytvorit nasledovne:
-    //auto d = sat::domain<30,7,3,1,true>();
+//    auto d = sat::domain<30,7,3,1,true>();
     // Tato domena pak ma:
     //   - 30 booleovskych promennych
     //   - 7 termu (ktere jsou spojeny disjunkci)
@@ -90,12 +92,12 @@ int main() {
 
 
     // Vytvorit domenu sliding-puzzle hranou na hraci plose 4x4 (15-puzzle) muzete takto:
-    //auto d = sliding_puzzle::domain<4, 70, 0>();
+    auto d = sliding_puzzle::domain<4, 70, 0>();
     // Inicialni pozice je generovana provedenim 70 nahodnych tahu (nahodny
     // generator je inicializovany seedem 0).
 
     // Posledni domenou jsou bludiste. Bludiste o rozmerech 31x21 muzete vytvorit pomoci:
-    //auto d = maze::domain<31, 21, 0, false>();
+//    auto d = maze::domain<31, 21, 0, false>();
     // Bludiste je generovano nahodne za pouziti seedu 0. V pripade, ze
     // nastavite posledni parametr na 'true', cena za jeden pohyb v bludisti
     // nebude uniformni.
@@ -104,9 +106,9 @@ int main() {
 
     auto root = d.get_root();
 
-    evaluate(root, bfs);
-//    evaluate(root, iddfs);
-    //evaluate(root, iddfs_weighted);
+//    evaluate(root, bfs);
+    evaluate(root, iddfs);
+    evaluate(root, iddfs_weighted);
 
     return 0;
 }
